@@ -1,7 +1,3 @@
-- set_fact:
-    home_path: "{{ ansible_env.HOME }}"
-
-
 - name: Update apt cache
   apt: update_cache=yes
   when: update
